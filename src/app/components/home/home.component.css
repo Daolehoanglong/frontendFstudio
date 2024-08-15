@@ -1,0 +1,34 @@
+.categories__text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Chỉnh màu chữ tùy thích */
+  }
+  
+  .categories__text h1 {
+    font-size: 30px; /* Chỉnh kích thước font tùy thích */
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và đoạn văn */
+  }
+  
+  .categories__text p {
+    font-size: 18px; /* Chỉnh kích thước font tùy thích */
+    margin-bottom: 20px; /* Khoảng cách giữa đoạn văn và nút */
+    
+  }
+  
+  .categories__text a {
+    background-color: #333; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    padding: 10px 20px; /* Kích thước nút */
+    border-radius: 5px; /* Độ cong viền nút */
+    text-decoration: none; /* Loại bỏ gạch chân từ liên kết */
+  }
+  
+  .categories__text a:hover {
+    background-color: #555; /* Màu nền khi di chuột qua nút */
+  }
+img{
+    width: 100%;
+}  

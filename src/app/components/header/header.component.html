@@ -1,0 +1,65 @@
+<header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-lg-2">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-7">
+                <nav class="header__menu">
+                    <ul>
+                        <li class="active"><a [routerLink]="['home']">Home</a></li>
+                        <li><a href="#">Women’s</a></li>
+                        <li><a [routerLink]="['category-list']" href="#">Trang quan tri</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="./product-details.html">Product Details</a></li>
+                                <li><a href="./shop-cart.html">Shop Cart</a></li>
+                                <li><a href="./checkout.html">Checkout</a></li>
+                                <li><a href="./blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a>Contact</a></li>
+                      
+                            {{this.keyword}}
+                            <input type="text" name="keyword" [(ngModel)]="keyword">
+                            <a href="" (click)="onsearch()">
+                                <span class="icon_search search-switch"></span>
+                            </a>
+                            
+                        <!-- <a class="icon_search search-switch" href="" (click)="onsearch()">
+                            <span class="icon_search search-switch"></span>
+                        </a> -->
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3">
+                <div class="header__right">
+
+                    <div class="header__right__auth">
+                        <a *ngIf="!isLogin" [routerLink]="['/login']">Login</a>
+                        <a *ngIf="!isLogin" [routerLink]="['/register']" href="#">Register</a>
+                        <a *ngIf="isLogin" [routerLink]="['/myAcc']" href="">Tài khoản</a>
+                        <h5 *ngIf="isLogin" (click)="onSubmit()" href="">Đăng xuất</h5>
+                        <h5 *ngIf="isLogin" href="">xin chào {{isLogin}}</h5>
+                    </div>
+                    <ul class="header__right__widget">
+                        <li><span class="icon_search search-switch"></span></li>
+                        <li><a href="#"><span class="icon_heart_alt"></span>
+                                <div class="tip">2</div>
+                            </a></li>
+                        <li><a href="#"><span class="icon_bag_alt"></span>
+                                <div class="tip">2</div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="canvas__open">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</header>

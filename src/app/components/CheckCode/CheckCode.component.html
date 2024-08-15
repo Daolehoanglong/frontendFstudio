@@ -1,0 +1,16 @@
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h2 class="login-header">Quên tài khoản</h2>
+      <form class="login-form" (ngSubmit)="onSubmit()" [formGroup]="userForm">
+        <div class="form-group">
+          <label for="email">Mã xác nhận</label>
+          <input type="text"  [(ngModel)]="user.email" id="email" formControlName="code" class="form-control" required>
+        </div>
+        <button type="submit" class="login-btn">Xác nhận</button>
+      </form>
+      <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+</body>
+
